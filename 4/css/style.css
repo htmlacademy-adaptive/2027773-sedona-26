@@ -1,2 +1,228 @@
-
+.page-header {
+  height: 56px;
+  background-color: #ffffff;
+}
+.page-header .page-header__logo-image {
+  margin-left: 67px;
+}
+.font-text {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+.font-title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+.advantages__title,
+.advantages__subtitle {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.advantages__text {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.advantages__description,
+.advantages__number {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  margin: 0;
+  display: block;
+}
+.advantages__advantages-item {
+  background-color: #81b3d2;
+  list-style-type: none;
+  color: #ffffff;
+}
+.advantages__list,
+.advantages-list__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.advantages-list__item {
+  list-style-type: none;
+}
+.advantages-list__item--house {
+  background-image: url(../../icons/icon-house.svg.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 10px 10px;
+}
+.advantages-list__item--burger {
+  background-image: url(../../icons/icon-burger.svg.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 10px 10px;
+}
+.advantages-list__item--gift {
+  background-image: url(../../icons/icon-gift.svg.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 10px 10px;
+}
+.advantages-list__title {
+  margin-left: 70px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-align: left;
+}
+.advantages-list__description {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-align: left;
+  color: #333333;
+  margin-left: 70px;
+}
+.advantages__item {
+  background-color: #EEEEEE;
+  color: #333333;
+}
+.image-welcome {
+  background-color: #5d8585;
+  background-image: url(../../icons/back-mobile.jpg.jpg);
+  background-size: cover;
+}
+.image-welcome__logo-main {
+  margin-top: 90px;
+  margin-left: 19px;
+  margin-bottom: 87px;
+}
+.page-footer__hashtag {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  padding: 0;
+  margin-top: 28px;
+  margin-bottom: 34px;
+}
+.social__link,
+.page-footer__copyright {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+.social__social-item {
+  margin-right: 6px;
+  list-style-type: none;
+}
+.page-footer__social {
+  display: flex;
+  margin-left: 80px;
+  padding: 0;
+}
+.page-footer__copyright {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+.page-footer__copyright .copyright__text {
+  margin-left: 80px;
+  width: 121px;
+}
+.search__title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+.search__text {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+.search__link {
+  background-color: #81b3d2;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 49px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 284px;
+  display: block;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #ffffff;
+}
+.nav__toggle {
+  background: url(../../icons/icon-menu.svg.svg);
+  width: 22px;
+  height: 22px;
+  border: none;
+}
+.nav__list {
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.nav__item {
+  list-style: none;
+  background-color: #81b3d2;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.nav__link {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  width: 320px;
+  text-transform: uppercase;
+  margin: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.css.map */
