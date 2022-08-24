@@ -16,7 +16,7 @@
       <button class="nav__toggle button" type="button">
         <span class="visually-hidden">Открыть меню навигации.</span>
       </button>
-      <ul class="nav__list ">
+      <!--<ul class="nav__list ">
         <li class="nav__item">
           <a class="nav__link" href="#">Главная</a>
         </li>
@@ -29,12 +29,14 @@
         <li class="nav__item">
           <a class="nav__link" href="#">HTML Academy</a>
         </li>
-      </ul>
+      </ul>-->
     </nav>
   </header>
   <main class="form">
     <section class="page-main">
-      <img class="page-main__logo" src="#" alt="Седона.">
+      <div class="page-main__logo-container">
+      <img class="page-main__logo" src="../icons/sedona.svg" alt="Седона.">
+    </div>
       <h1 class="page-main__title ">Оставьте свой отзыв</h1>
       <p class="page-main__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
@@ -63,12 +65,12 @@
               Контактный телефон*:
               <input class="reviews__text-control text-control text-control--phone" type="tel" value="Введите телефон"
                 name="telephone">
-              <img src="#" alt="Телефонная трубка.">
+              <img src="../icons/phone-icon.svg" alt="Телефонная трубка.">
             </label>
             <label class="reviews__email">
               Электронная почта*:
               <input class="reviews__text-control text-control text-control--mail" type="email" value="Введите e-mail" name="email">
-              <img src="#" alt="Конверт.">
+              <img src="../icons/email-icon.svg" alt="Конверт.">
             </label>
           </fieldset>
             <fieldset class="reviews__filter-radio">
@@ -131,7 +133,6 @@
             <button class="reviews__submit" type="submit">Отправить отзыв</button>
             <span class="reviews__note">* — Обязательные поля</span>
       </form>
-
     </section>
   </main>
   <footer class="page-footer">
@@ -200,3 +201,5 @@
 </body>
 
 </html>
+
+
