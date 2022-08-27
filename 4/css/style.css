@@ -5,6 +5,10 @@
 .page-header .page-header__logo-image {
   margin-left: 67px;
 }
+.page-header__nav {
+  position: relative;
+  z-index: 1;
+}
 .font-text {
   font-family: "PT Sans";
   font-size: 14px;
@@ -26,6 +30,7 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+  padding-top: 54px;
   margin: 0;
   text-transform: uppercase;
   text-decoration: none;
@@ -101,7 +106,78 @@
   background-color: #EEEEEE;
   color: #333333;
 }
+.advantages__bottom-vector {
+  position: relative;
+}
+.advantages__bottom-vector::before {
+  position: absolute;
+  background-image: url(../../icons/advantage-vector-right.svg);
+  width: 384px;
+  height: 37px;
+  background-position: 159px;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: -34px;
+}
+.advantages__bottom-vector::after {
+  position: absolute;
+  background-image: url(../../icons/advantage-vector-left.svg);
+  width: 384px;
+  height: 37px;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: -34px;
+}
+.gallery__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.gallery__description,
+.gallery__number-like {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-align: start;
+}
+.gallery__user {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  display: block;
+  text-align: start;
+  text-transform: none;
+  color: #333333;
+}
+.gallery__button-like {
+  border: none;
+  background-color: #ffffff;
+}
+.gallery__item {
+  position: relative;
+}
+.gallery__item::before {
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  height: 1px;
+  width: 320px;
+  background-color: #E5E5E5;
+  content: "";
+}
+.gallery__image {
+  margin-top: 24px;
+}
 .image-welcome {
+  position: relative;
   background-color: #5d8585;
   background-image: url(../../icons/back-mobile.jpg.jpg);
   background-size: cover;
@@ -109,7 +185,27 @@
 .image-welcome__logo-main {
   margin-top: 90px;
   margin-left: 19px;
-  margin-bottom: 87px;
+  margin-bottom: 85px;
+}
+.bottom-vector::before {
+  position: absolute;
+  background-image: url(../../icons/vector-right-welcome.svg);
+  width: 600px;
+  height: 57px;
+  background-position: 160px;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: 0px;
+}
+.bottom-vector::after {
+  position: absolute;
+  background-image: url(../../icons/vector-left-welcome.svg);
+  width: 600px;
+  height: 57px;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: 0px;
 }
 .page-footer__hashtag {
   font-family: "PT Sans";
@@ -150,6 +246,118 @@
   margin-left: 80px;
   width: 121px;
 }
+.page-main__logo-container {
+  background-color: #5d8585;
+  background-image: url(../../icons/back-mobile.jpg@2x.jpg);
+  background-size: cover;
+}
+.page-main__logo {
+  padding: 52px 45px 67px;
+}
+.page-main__title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+.page-main__description {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+.page-main {
+  border-bottom: 1px solid #E5E5E5;
+}
+.reviews__contacts,
+.reviews__filter-radio,
+.reviews__filter-checkbox {
+  border: none;
+}
+.reviews__title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+}
+.reviews__label,
+.reviews__contacts-phone,
+.reviews__email {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+.reviews__text-control {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-align: start;
+}
+.reviews__text-control {
+  border: none;
+  background-color: #F2F2F2;
+}
+.reviews__input {
+  margin-left: 20px;
+  border: none;
+  background-color: #F2F2F2;
+  width: 280px;
+}
+.text-control {
+  color: rgba(0, 0, 0, 0.3);
+}
+.reviews__list {
+  list-style-type: none;
+}
+.reviews__contacts,
+.reviews__filter-radio,
+.reviews__filter-checkbox {
+  border-bottom: 1px solid #E5E5E5;
+}
+.reviews__submit {
+  background-color: #81b3d2;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  margin: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 284px;
+  display: block;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.reviews__note {
+  font-family: PT Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  display: block;
+  color: rgba(51, 51, 51, 0.6);
+  margin-left: 163px;
+}
+.reviews__input::placeholder {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.3);
+}
 .search__title {
   font-family: "PT Sans";
   font-size: 18px;
@@ -181,15 +389,21 @@
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: -83px;
   background: url(../../icons/icon-menu.svg.svg);
   width: 22px;
   height: 22px;
   border: none;
 }
 .nav__list {
-  z-index: 2;
+  position: absolute;
+  top: -102px;
+  width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -209,6 +423,111 @@
   color: #ffffff;
   text-decoration: none;
 }
+.modal__title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+.modal__description {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+.modal__button {
+  background-color: #81b3d2;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  margin: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 284px;
+  display: block;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.modal__button--positive {
+  width: 180px;
+}
+.modal__button-container {
+  padding: 20px;
+  background-color: #F2F2F2;
+}
+.video-gallery__video-title {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+.video-gallery__video-description {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+.video-gallery__video {
+  margin-left: 20px;
+}
+.video-gallery__video-button {
+  border: none;
+  background: transparent;
+  position: absolute;
+  left: 128px;
+  bottom: 60px;
+}
+.video-gallery {
+  position: relative;
+}
+.button-like {
+  border: none;
+  background-color: #ffffff;
+}
+.bottom-vector {
+  position: relative;
+}
+.bottom-vector::before {
+  position: absolute;
+  background-image: url(../../icons/vector-right-welcome.svg);
+  width: 600px;
+  height: 57px;
+  background-position: 160px;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: 0px;
+}
+.bottom-vector::after {
+  position: absolute;
+  background-image: url(../../icons/vector-left-welcome.svg);
+  width: 600px;
+  height: 57px;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: 0px;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
 body {
   font-family: "PT Sans", sans-serif;
   width: 320px;
@@ -224,5 +543,19 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
 }
 /*# sourceMappingURL=style.css.map */

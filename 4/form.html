@@ -17,7 +17,7 @@
       <button class="nav__toggle button" type="button">
         <span class="visually-hidden">Открыть меню навигации.</span>
       </button>
-      <ul class="nav__list ">
+      <!--<ul class="nav__list ">
         <li class="nav__item">
           <a class="nav__link" href="#">Главная</a>
         </li>
@@ -30,12 +30,15 @@
         <li class="nav__item">
           <a class="nav__link" href="#">HTML Academy</a>
         </li>
-      </ul>
+      </ul>-->
     </nav>
   </header>
   <main class="form">
     <section class="page-main">
-      <img class="page-main__logo" src="#" alt="Седона.">
+      <div class="page-main__logo-container">
+        <img class="page-main__logo" src="../icons/sedona.svg" alt="Седона.">
+        <div class="bottom-vector"></div>
+      </div>
       <h1 class="page-main__title ">Оставьте свой отзыв</h1>
       <p class="page-main__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
@@ -64,12 +67,12 @@
               Контактный телефон*:
               <input class="reviews__text-control text-control text-control--phone" type="tel" value="Введите телефон"
                 name="telephone">
-              <img src="#" alt="Телефонная трубка.">
+              <img src="../icons/phone-icon.svg" alt="Телефонная трубка.">
             </label>
             <label class="reviews__email">
               Электронная почта*:
               <input class="reviews__text-control text-control text-control--mail" type="email" value="Введите e-mail" name="email">
-              <img src="#" alt="Конверт.">
+              <img src="../icons/email-icon.svg" alt="Конверт.">
             </label>
           </fieldset>
             <fieldset class="reviews__filter-radio">
@@ -132,7 +135,6 @@
             <button class="reviews__submit" type="submit">Отправить отзыв</button>
             <span class="reviews__note">* — Обязательные поля</span>
       </form>
-
     </section>
   </main>
   <footer class="page-footer">
@@ -185,19 +187,21 @@
         alt="Логотип HTML academy, разработчика сайта.">
     </a>
   </footer>
-  <div class="modal-negative">
-    <h2 class="modal-negative__title">Что-то пошло не так</h2>
-    <p class="modal-negative__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal-negative__button" type="button">Ок</button>
+  <div class="modal modal">
+    <h2 class="modal__title">Что-то пошло не так</h2>
+    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__button modal__button--positive" type="button">Ок</button>
   </div>
-  <div class="modal-positive">
-    <h2 class="modal-positive__title">Ваш отзыв отправлен!</h2>
-    <p class="modal-positive__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.в ближайшее время мы
+  <div class="modal modal">
+    <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+    <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.в ближайшее время мы
       опубликуем его на сайте.</p>
-    <div class="modal-positive__button-container">
-      <button class="modal-positive__button" type="button">Закрыть окно</button>
+    <div class="modal__button-container">
+      <button class="modal__button" type="button">Закрыть окно</button>
     </div>
   </div>
 </body>
 
 </html>
+
+

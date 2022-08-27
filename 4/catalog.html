@@ -13,29 +13,32 @@
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="../icons/logo.svg" alt="Логотип Седоны.">
     </a>
-    <nav class="page-header__navigation navigation">
-      <button class="navigation__toggle button" type="button">
+    <nav class="page-header__nav nav">
+      <button class="nav__toggle button" type="button">
         <span class="visually-hidden">Открыть меню навигации.</span>
       </button>
-      <ul class="navigation__list ">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Главная</a>
+      <!--<ul class="nav__list ">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Главная</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Фото и видео</a>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Фото и видео</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Форма отзыва</a>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Форма отзыва</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">HTML Academy</a>
+        <li class="nav__item">
+          <a class="nav__link" href="#">HTML Academy</a>
         </li>
-      </ul>
+      </ul>-->
     </nav>
   </header>
   <main class="catalog">
     <section class="page-main">
-      <img class="page-main__logo" src="#" alt="Седона.">
+      <div class="page-main__logo-container">
+        <img class="page-main__logo" src="../icons/sedona.svg" alt="Седона.">
+        <div class="bottom-vector"></div>
+      </div>
       <h1 class="page-main__title ">Фото и видео</h1>
       <p class="page-main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
         забыть о политике и экономике.</p>
@@ -47,35 +50,35 @@
           <img class="gallery__image" src="../icons/relatives-mobile.jpg" alt="Дорога на фоне заката.">
           <p class="gallery__description">Неродные просторы</p>
           <span class="gallery__user">Автор фото: Борис</span>
-          <button class="gallery__button-like" type="button">
-            <img class="gallery__image-like" src="#" alt="Поствить лайк фотографии.">
+          <button class="button-like" type="button">
+            <img class="button-like__image-like" src="../icons/like-icon.svg" alt="Поствить лайк фотографии.">
           </button>
           <p class="gallery__number-like">1350</p>
         </li>
         <li class="gallery__item">
           <img class="gallery__image" src="../icons/local-vegetation-mobile.jpg" alt="Цветущий кактус.">
-          <p class="gallery-description">Местная растительность</p>
+          <p class="gallery__description">Местная растительность</p>
           <span class="gallery__user">Автор фото: Сергей</span>
-          <button class="gallery__button-like" type="button">
-            <img class="gallery__image-like" src="#" alt="Поствить лайк фотографии.">
+          <button class="button-like" type="button">
+            <img class="button-like__image-like" src="../icons/like-icon.svg" alt="Поствить лайк фотографии.">
           </button>
           <p class="gallery__number-like">143</p>
         </li>
         <li class="gallery__item">
           <img class="gallery__image" src="../icons/nord-road-mobile.jpg" alt="Серпантин.">
-          <p class="gallery-description">Дорога на север</p>
+          <p class="gallery__description">Дорога на север</p>
           <span class="gallery__user">Автор фото: Петр</span>
-          <button class="gallery__button-like" type="button">
-            <img class="gallery__image-like" src="#" alt="Поствить лайк фотографии.">
+          <button class="button-like" type="button">
+            <img class="button-like__image-like" src="../icons/like-icon.svg" alt="Поствить лайк фотографии.">
           </button>
           <p class="gallery__number-like">96</p>
         </li>
         <li class="gallery__item">
           <img class="gallery__image" src="../icons/bridge-gallery.png" alt="Отвесная скала.">
-          <p class="gallery-description">Мост дьявола</p>
+          <p class="gallery__description">Мост дьявола</p>
           <span class="gallery__user">Автор фото: Антон</span>
-          <button class="gallery__button-like" type="button">
-            <img class="gallery__image-like" src="#" alt="Поствить лайк фотографии.">
+          <button class="button-like" type="button">
+            <img class="button-like__image-like" src="../icons/like-icon.svg" alt="Поствить лайк фотографии.">
           </button>
           <p class="gallery__number-like">254</p>
         </li>
@@ -88,7 +91,7 @@
       <video class="video-gallery__video" poster="../icons/video-mobile.jpg.png">
       </video>
       <button class="video-gallery__video-button">
-        <img class="video-gallery__button-img-video" src="#" alt="Включить видео.">
+        <img class="video-gallery__button-img-video" src="../icons/Polygon 1.svg" alt="Включить видео.">
       </button>
     </section>
   </main>
