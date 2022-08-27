@@ -1,6 +1,7 @@
 .advantages__title,
 .advantages__subtitle  {
 .font-title();
+padding-top: 54px;
 margin: 0;
 text-transform: uppercase;
 text-decoration: none;
@@ -18,8 +19,8 @@ color: #333333;
   display: block
 }
 
-.advantages__advantages-item{
-  .blue-color();
+.advantages__advantages-item{  .blue-color();
+
   list-style-type: none;
   color: #ffffff;
 
@@ -63,3 +64,26 @@ color: #333333;
   background-color: #EEEEEE;
   color: #333333;
 }
+.advantages__bottom-vector{
+  position: relative;
+  &::before {
+    position: absolute;
+  background-image: url(../../icons/advantage-vector-right.svg);
+  width: 384px;
+  height: 37px;
+  background-position: 159px;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: -34px;
+  }
+  &::after {
+    position: absolute;
+  background-image: url(../../icons/advantage-vector-left.svg);
+  width: 384px;
+  height: 37px;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  content: "";
+  bottom: -34px;
+  }
+ }
