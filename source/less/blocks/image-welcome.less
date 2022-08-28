@@ -1,0 +1,36 @@
+.image-welcome {
+  position: relative;
+  background-color: #5d8585;
+  background-image: url(../img/back-mobile.jpg);
+  background-size: cover;
+
+}
+.image-welcome__logo-main{
+  margin-top: 90px;
+  margin-left: 19px;
+  margin-bottom: 85px;
+}
+
+.bottom-vector{
+  &::before {
+    position: absolute;
+    background-image: url(../img/vector-right-welcome.svg);
+    width: 600px;
+    height: 57px;
+    background-position: 160px;
+    background-repeat: no-repeat;
+    content: "";
+    bottom: 0px;
+  }
+  &::after {
+    position: absolute;
+    background-image: url(../img/vector-left-welcome.svg);
+    width: 600px;
+    height: 57px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    content: "";
+    bottom: 0px;
+  }
+}
+
