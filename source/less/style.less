@@ -20,12 +20,22 @@
 @import url(./blocks/button-like.less);
 @import url(./blocks/bottom-vector.less);
 @import url(global/global.less);
-
+@import url(global/viewports.less);
 
 
 body {
   font-family: "PT Sans", sans-serif;
-  width: 320px;
+  max-width: 320px;
   text-transform: uppercase;
   margin: auto;
+}
+@media (min-width: @tablet-width) {
+  body {
+    max-width: 768px;
+  }
+}
+@media (min-width: @desktop-width) {
+  body {
+    max-width: 1200px;
+  }
 }
