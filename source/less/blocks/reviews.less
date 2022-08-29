@@ -1,7 +1,7 @@
 .reviews__contacts,
 .reviews__filter-radio,
 .reviews__filter-checkbox{
-border: none;
+  border: none;
 }
 .reviews__title{
   .font-title();
@@ -22,10 +22,9 @@ border: none;
   background-color: #F2F2F2;
 }
 .reviews__input {
-  margin-left: 20px;
+  width: 100%;
   border: none;
   background-color: #F2F2F2;
-  width: 280px;
 }
 .text-control{
   color: rgba(0, 0, 0, 0.3);
@@ -63,4 +62,64 @@ border: none;
   .font-title();
   text-align: start;
   color: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: @tablet-width){
+  .reviews__user{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: @tablet-width){
+  .reviews__contacts{
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+@media (min-width: @tablet-width){
+  .reviews__filter-radio{
+    grid-column: span 2;
+  }
+}
+@media (min-width: @tablet-width){
+  .reviews__filter-checkbox{
+    grid-column: span 2;
+  }
+}
+@media (min-width: @tablet-width){
+  .reviews__user-message{
+    max-width: 768px;
+    grid-column: span 2;
+  }
+}
+@media (min-width: @tablet-width){
+  .reviews__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: @tablet-width){
+  .modal{
+    width: 400px;
+    margin: auto;
+  }
+}
+@media (min-width: @tablet-width){
+  .modal--positive{
+    width: 640px;}
+}
+
+@media (min-width: @desktop-width){
+  .reviews__list{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .reviews__user-message{
+    margin: auto;
+    width: 768px;
+  }
 }
