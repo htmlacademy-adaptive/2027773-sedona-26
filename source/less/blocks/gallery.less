@@ -38,3 +38,35 @@
 .gallery__image{
   margin-top: 24px;
 }
+
+@media (min-width: @tablet-width){
+  .gallery__list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 60px;
+  margin: auto;
+  max-width: 648px;
+  }
+}
+@media (min-width: @tablet-width){
+  .gallery__item:nth-child(1){
+    grid-column: 2 span;
+  }
+}
+@media (min-width: @desktop-width){
+  .gallery__list{
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  padding: 0;
+  }
+}
+@media (min-width: @desktop-width){
+  .gallery__item:nth-child(1){
+    grid-column: 3 span;
+  }
+}
+@media (min-width: @desktop-width){
+  .gallery__image{
+    min-width: 400px;
+  }
+}
