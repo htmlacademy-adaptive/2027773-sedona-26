@@ -3,6 +3,9 @@
 .reviews__filter-checkbox{
   border: none;
 }
+.reviews {
+  margin: auto 20px;
+}
 .reviews__title{
   .font-title();
   display: block
@@ -62,6 +65,11 @@
   .font-title();
   text-align: start;
   color: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: @tablet-width){
+  .reviews{
+    margin: auto 60px ;
+  }
 }
 @media (min-width: @tablet-width){
   .reviews__user{
