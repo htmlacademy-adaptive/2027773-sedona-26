@@ -340,6 +340,16 @@
   content: "";
   bottom: 0px;
 }
+@media (min-width: 768px) {
+  .image-welcome {
+    background-image: url(../img/back-tablet.png);
+  }
+}
+@media (min-width: 1200px) {
+  .image-welcome {
+    background-image: url(../img/back-desktop.png);
+  }
+}
 .page-footer__hashtag {
   font-family: "PT Sans";
   font-size: 18px;
@@ -432,6 +442,9 @@
 .reviews__filter-checkbox {
   border: none;
 }
+.reviews {
+  margin: auto 20px;
+}
 .reviews__title {
   font-family: "PT Sans";
   font-size: 18px;
@@ -511,6 +524,11 @@
   text-align: center;
   text-align: start;
   color: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 768px) {
+  .reviews {
+    margin: auto 60px ;
+  }
 }
 @media (min-width: 768px) {
   .reviews__user {
@@ -779,11 +797,21 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  background-color: #ffffff;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+}
 body {
   font-family: "PT Sans", sans-serif;
   max-width: 320px;
   text-transform: uppercase;
   margin: auto;
+  background-color: #F2F2F2;
 }
 @media (min-width: 768px) {
   body {
