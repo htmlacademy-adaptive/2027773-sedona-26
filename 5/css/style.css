@@ -3,6 +3,8 @@
   background-color: #ffffff;
 }
 .page-header .page-header__logo-image {
+  position: relative;
+  z-index: 1;
   display: block;
   margin: auto;
 }
@@ -82,6 +84,7 @@
 }
 .advantages-list__item {
   list-style-type: none;
+  padding-left: 70px;
 }
 .advantages-list__item--house {
   background-image: url(../img/icons/icon-house.svg);
@@ -99,7 +102,6 @@
   background-position: 10px 10px;
 }
 .advantages-list__title {
-  margin-left: 70px;
   font-family: "PT Sans";
   font-size: 18px;
   font-weight: 700;
@@ -115,7 +117,6 @@
   text-align: center;
   text-align: left;
   color: #333333;
-  margin-left: 70px;
 }
 .advantages__item {
   background-color: #EEEEEE;
@@ -179,6 +180,8 @@
   .advantages-list__item {
     width: 256px;
     height: 256px;
+    padding: 0;
+    margin: 0;
   }
 }
 @media (min-width: 768px) {
@@ -311,38 +314,49 @@
   }
 }
 .image-welcome {
+  position: relative;
   background-color: #5d8585;
   background-image: url(../img/back-mobile.jpg);
   background-repeat: no-repeat;
 }
 .image-welcome__logo-main {
-  margin-top: 90px;
-  margin-left: 19px;
-  margin-bottom: 85px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 90px;
+  padding-bottom: 85px;
 }
-.bottom-vector::before {
+.image-welcome__bottom-vector::before {
   position: absolute;
   background-image: url(../img/vector-right-welcome.svg);
-  width: 600px;
-  height: 57px;
+  width: 100%;
+  height: 56px;
   background-position: 160px;
   background-repeat: no-repeat;
   content: "";
-  bottom: 0px;
+  bottom: 0;
 }
-.bottom-vector::after {
+.image-welcome__bottom-vector::after {
   position: absolute;
   background-image: url(../img/vector-left-welcome.svg);
-  width: 600px;
-  height: 57px;
+  width: 100%;
+  height: 56px;
   background-position: 0;
   background-repeat: no-repeat;
   content: "";
-  bottom: 0px;
+  bottom: 0;
 }
 @media (min-width: 768px) {
   .image-welcome {
     background-image: url(../img/back-tablet.png);
+  }
+}
+@media (min-width: 768px) {
+  .image-welcome__bottom-vector::before {
+    background-image: url(../img/vector-right-tablet.svg);
+    background-position: 384px;
+  }
+  .image-welcome__bottom-vector::after {
+    background-image: url(../img/vector-left-tablet.svg);
   }
 }
 @media (min-width: 1200px) {
@@ -350,15 +364,30 @@
     background-image: url(../img/back-desktop.png);
   }
 }
+@media (min-width: 1200px) {
+  .image-welcome__bottom-vector::before {
+    background-image: url(../img/vector-right-desktop.svg);
+    background-position: 600px;
+  }
+  .image-welcome__bottom-vector::after {
+    background-image: url(../img/vector-left-desktop.svg);
+  }
+}
+.page-footer {
+  display: flex;
+  align-items: center;
+  min-height: 233px;
+  flex-flow: column;
+  justify-content: space-around;
+}
 .page-footer__hashtag {
   font-family: "PT Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+  margin: 0 auto;
   padding: 0;
-  margin-top: 28px;
-  margin-bottom: 34px;
 }
 .social__link,
 .page-footer__copyright {
@@ -376,17 +405,18 @@
 }
 .page-footer__social {
   display: flex;
-  margin-left: 80px;
   padding: 0;
+  justify-content: center;
+  margin: 0 auto;
 }
 .page-footer__copyright {
   margin: 0 auto;
   display: flex;
-  margin-top: 40px;
   align-items: center;
+  padding: 0;
+  justify-content: center;
 }
-.page-footer__copyright .copyright__text {
-  margin-left: 80px;
+.copyright__text {
   width: 121px;
 }
 @media (min-width: 768px) {
@@ -394,11 +424,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-}
-@media (min-width: 768px) {
-  .page-footer__copyright {
-    margin: 0;
+    flex-flow: row;
+    min-height: 120px;
   }
 }
 .page-main__logo-container {
@@ -407,7 +434,10 @@
   background-size: cover;
 }
 .page-main__logo {
-  padding: 52px 45px 67px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 52px;
+  padding-bottom: 50px;
 }
 .page-main__title {
   font-family: "PT Sans";
@@ -648,6 +678,9 @@
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
@@ -799,6 +832,12 @@
 }
 .container {
   background-color: #ffffff;
+  width: 320px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
