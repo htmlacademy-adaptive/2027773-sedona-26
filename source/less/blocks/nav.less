@@ -23,8 +23,45 @@
 }
 .nav__link {
   .font-title();
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .nav__list {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    width: 768px;
+    height: 56px;
+    align-items: center;
+  }
+}
+@media (min-width: @tablet-width) {
+  .nav__link {
+    color: #000000;
+    font-size: 14px;
+  }
+}
+@media (min-width: @tablet-width) {
+  .nav__item {
+    background-color:transparent;
+    box-shadow: none;
+  }
+  .nav__item:nth-child(3){
+  grid-column-end: -2;
+}
+}
+@media (min-width: @desktop-width) {
+  .nav__list {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    width: 1200px;
+    height: 56px;
+    align-items: center;
+  }
 }
 

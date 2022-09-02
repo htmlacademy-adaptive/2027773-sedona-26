@@ -5,7 +5,10 @@
 
 }
 .page-main__logo{
-  padding: 52px 45px 67px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 52px;
+  padding-bottom: 50px;
 }
 .page-main__title{
   .font-title();
@@ -16,4 +19,14 @@
 }
 .page-main {
   border-bottom: 1px solid #E5E5E5;
+}
+@media (min-width: @tablet-width){
+  .page-main__description{
+    line-height: 24px;
+  }
+}
+@media (min-width: @tablet-width){
+  .page-main__title{
+    font-size: 30px;
+  }
 }
