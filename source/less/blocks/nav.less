@@ -2,13 +2,46 @@
   position: absolute;
   right: 20px;
   top: -83px;
-  background: url(../../icons/icon-menu.svg.svg);
   width: 22px;
   height: 22px;
   border: none;
+  cursor: pointer;
+  background: url(../img/icons/icon-close.svg);
+  z-index: 4;
 }
-
 .nav__list {
+  position: absolute;
+  top: -102px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.nav--close .nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: -83px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+  background: url(../img/icons/icon-close.svg);
+  z-index: 4;
+}
+.nav .nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: -83px;
+  background: url(../img/icons/icon-menu.svg);
+  width: 22px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+}
+.nav .nav__list {
+  display: none;
+}
+.nav--close .nav__list {
   position: absolute;
   top: -102px;
   width: 100%;
@@ -19,7 +52,7 @@
 .nav__item {
   list-style: none;
   .blue-color();
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .nav__link {
   .font-title();
@@ -30,14 +63,21 @@
   color: #ffffff;
   text-decoration: none;
 }
-
 @media (min-width: @tablet-width) {
-  .nav__list {
+  .nav .nav__list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 768px;
     height: 56px;
     align-items: center;
+  }
+}
+@media (min-width: @tablet-width) {
+  .nav__toggle {
+    display: none;
   }
 }
 @media (min-width: @tablet-width) {
@@ -52,16 +92,15 @@
     box-shadow: none;
   }
   .nav__item:nth-child(3){
-  grid-column-end: -2;
-}
+    grid-column-end: -2;
+  }
 }
 @media (min-width: @desktop-width) {
-  .nav__list {
+  .nav .nav__list {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 1200px;
     height: 56px;
     align-items: center;
   }
 }
-
