@@ -1,9 +1,15 @@
-.modal__title{
+.modal {
+  padding: 45px 42px 35px;
+}
+
+.modal__title {
   .font-title();
 }
-.modal__description{
+
+.modal__description {
   .font-text();
 }
+
 .modal__button {
   .blue-color();
   .font-title();
@@ -16,9 +22,23 @@
   color: #ffffff;
   text-transform: uppercase;
 }
+
+.modal--positive {
+  padding: 0;
+}
+.modal--positive .modal__title {
+  margin-top: 39px;
+}
+
+.modal--positive .modal__description {
+  width: 244px;
+  margin: 30px auto;
+}
+
 .modal__button--positive {
   width: 180px;
 }
+
 .modal__button-container {
   padding: 20px;
   background-color:#F2F2F2;

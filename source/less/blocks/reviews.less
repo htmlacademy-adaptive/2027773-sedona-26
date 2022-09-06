@@ -1,70 +1,103 @@
 .reviews__contacts,
 .reviews__filter-radio,
-.reviews__filter-checkbox{
+.reviews__filter-checkbox {
   border: none;
+  border-bottom: 1px solid #e5e5e5;
   margin: 0;
   padding: 0;
   padding-bottom: 23px;
 }
+
 .reviews {
   margin: auto 20px;
 }
-.reviews__title{
+
+.reviews__title {
   .font-title();
   display: block;
   margin-bottom: 20px;
   padding-top: 24px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+    font-size: 21px;
+    padding: 0;
+    padding-top: 24px;
+  }
 }
-.reviews__label,
-.reviews__contacts-phone,
-.reviews__email{
+
+.reviews__label {
   .font-text();
-  color:#333333;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  color: #333333;
   margin-left: 16px;
+  @media (min-width: @tablet-width) {
+    text-align: start;
+  }
 }
-.reviews__text-control{
+
+.reviews__contacts-phone,
+.reviews__email {
+  .font-text();
+  color: #333333;
+}
+
+.reviews__text-control {
   .font-title();
   text-align: start;
   border: none;
   background-color: #F2F2F2;
   width: 248px;
   padding: 16px;
+  @media (min-width: @tablet-width) {
+    margin-left: -16px;
+  }
+}
+.reviews__label .reviews__text-control {
   margin-bottom: 16px;
 }
+
+.text-control--phone,
+.text-control--mail {
+  width: 190px;
+  margin-left: -16px;
+}
+
 .reviews__contacts-phone,
 .reviews__email {
-  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  padding-left: 16px;
 }
-.rewiews__image-email {
-  position: absolute;
-  top: 20px;
-  right: 0;
+
+.reviews__control > .reviews__label {
+  .font-title();
+  text-transform: none;
 }
-.rewiews__image-phone {
-  position: absolute;
-  top: 20px;
-  right: -264px;
-}
+
 .reviews__input {
   width: 100%;
   border: none;
   background-color: #F2F2F2;
-}
-.text-control{
-  color: rgba(0, 0, 0, 0.3);
-}
-.reviews__list{
-  list-style-type: none;
-  .font-title();
-  text-align: start;
+  margin-bottom: 40px;
 }
 
-.reviews__contacts,
-.reviews__filter-radio,
-.reviews__filter-checkbox{
-  border-bottom: 1px solid #E5E5E5;
+.text-control {
+  color: rgba(0, 0, 0, 0.3);
 }
-.reviews__submit{
+
+.reviews__list {
+  .font-title();
+  list-style-type: none;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__submit {
   .blue-color();
   .font-title();
   margin: auto;
@@ -76,81 +109,145 @@
   color: #ffffff;
   text-transform: uppercase;
 }
-.reviews__note{
-  font-family: PT Sans;
+
+.reviews__control {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__item {
+  margin-bottom: 16px;
+}
+
+.reviews__mark-radio {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background: #F2F2F2;
+  border-radius: 50%;
+}
+
+.reviews__radio[type="radio"]:checked+.reviews__mark-radio::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icons/point.svg");
+  content: "";
+}
+
+.reviews__mark-checkbox {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+.reviews__checkbox[type="checkbox"]:checked+.reviews__mark-checkbox::before {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icons/tick.svg");
+  content: "";
+}
+
+.reviews__note {
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
   display: block;
   color: rgba(51, 51, 51, 0.6);
-  margin-left: 163px;
+  margin-left: 143px;
+  margin-bottom: 44px;
 }
+
 .reviews__input::placeholder {
   .font-title();
+  padding: 16px;
   text-align: start;
   color: rgba(0, 0, 0, 0.3);
 }
-@media (min-width: @tablet-width){
-  .reviews{
-    margin: auto 60px ;
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    margin: auto 60px;
   }
 }
-@media (min-width: @tablet-width){
-  .reviews__user{
+
+@media (min-width: @tablet-width) {
+  .reviews__user {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: @tablet-width){
-  .reviews__contacts{
+
+@media (min-width: @tablet-width) {
+  .reviews__contacts {
+    position: relative;
     display: flex;
     flex-direction: column;
+    &:nth-child(2)::before {
+      position: absolute;
+      width: 1px;
+      height: 338px;
+      background-color:  #DBDBDB;
+      content: "";
+    }
+  }
+}
 
-  }
-}
-@media (min-width: @tablet-width){
-  .reviews__filter-radio{
+@media (min-width: @tablet-width) {
+  .reviews__filter-radio {
     grid-column: span 2;
   }
 }
-@media (min-width: @tablet-width){
-  .reviews__filter-checkbox{
+
+@media (min-width: @tablet-width) {
+  .reviews__filter-checkbox {
     grid-column: span 2;
   }
 }
-@media (min-width: @tablet-width){
-  .reviews__user-message{
+
+@media (min-width: @tablet-width) {
+  .reviews__user-message {
     max-width: 768px;
     grid-column: span 2;
   }
 }
-@media (min-width: @tablet-width){
-  .reviews__list{
+
+@media (min-width: @tablet-width) {
+  .reviews__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: @tablet-width){
-  .modal{
+@media (min-width: @tablet-width) {
+  .modal {
     width: 400px;
     margin: auto;
   }
 }
-@media (min-width: @tablet-width){
-  .modal--positive{
-    width: 640px;}
+
+@media (min-width: @tablet-width) {
+  .modal--positive {
+    width: 640px;
+  }
 }
 
-@media (min-width: @desktop-width){
-  .reviews__list{
+@media (min-width: @desktop-width) {
+  .reviews__list {
     display: flex;
     justify-content: space-evenly;
   }
 }
 
-@media (min-width: @desktop-width){
-  .reviews__user-message{
+@media (min-width: @desktop-width) {
+  .reviews__user-message {
     margin: auto;
     width: 768px;
   }
