@@ -21,11 +21,23 @@
   border: none;
   color: #ffffff;
   text-transform: uppercase;
+  &:hover,
+  &:focus {
+    background-color: #669EC0;
+  }
+  &:active {
+    background-color:#5496BD;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    background-color: #E5E5E5;
+  }
 }
 
 .modal--positive {
   padding: 0;
 }
+
 .modal--positive .modal__title {
   margin-top: 39px;
 }
@@ -41,5 +53,5 @@
 
 .modal__button-container {
   padding: 20px;
-  background-color:#F2F2F2;
+  background-color: #f2f2f2;
 }

@@ -16,7 +16,7 @@
   @media (min-width: @tablet-width) {
     margin: auto 60px;
   }
-  @media (min-width: @desktop-width)  {
+  @media (min-width: @desktop-width) {
     margin: auto 120px;
   }
 }
@@ -59,9 +59,17 @@
   .font-title();
   text-align: start;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 248px;
   padding: 16px;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus,
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
   @media (min-width: @tablet-width) {
     margin-left: -16px;
   }
@@ -69,7 +77,7 @@
 .reviews__label .reviews__text-control {
   margin-bottom: 16px;
   margin-left: -16px;
-  @media (min-width: @desktop-width)  {
+  @media (min-width: @desktop-width) {
     width: 398px;
   }
 }
@@ -78,7 +86,7 @@
 .text-control--mail {
   width: 190px;
   margin-left: -16px;
-  @media (min-width: @desktop-width)  {
+  @media (min-width: @desktop-width) {
     width: 344px;
   }
 }
@@ -106,6 +114,14 @@
   border: none;
   background-color: #F2F2F2;
   margin-bottom: 40px;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus,
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
   @media (min-width: @tablet-width) {
     margin-bottom: 48px;
   }
@@ -134,6 +150,17 @@
   border: none;
   color: #ffffff;
   text-transform: uppercase;
+  &:hover,
+  &:focus {
+    background-color: #669EC0;
+  }
+  &:active {
+    background-color:#5496BD;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    background-color: #E5E5E5;
+  }
   @media (min-width: @tablet-width) {
     width: 324px;
   }
@@ -155,8 +182,19 @@
   position: relative;
   width: 46px;
   height: 46px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: #e5e5e5;
+  }
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.reviews__mark-radio:active::before {
+  opacity: 0.3;
 }
 
 .reviews__radio[type="radio"]:checked+.reviews__mark-radio::before {
@@ -173,8 +211,19 @@
   position: relative;
   width: 46px;
   height: 46px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 4px;
+  &:hover,
+  &:focus {
+    background-color: #e5e5e5;
+  }
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.reviews__mark-checkbox:active::before {
+  opacity: 0.3;
 }
 
 .reviews__checkbox[type="checkbox"]:checked+.reviews__mark-checkbox::before {
@@ -244,6 +293,7 @@
     }
   }
 }
+
 @media (min-width: @tablet-width) {
   .reviews__filter-checkbox .reviews__title {
     &::after {
@@ -298,6 +348,7 @@
     width: 768px;
   }
 }
+
 @media (min-width: @tablet-width) {
   .reviews__filter-radio {
     grid-column: span 2;
