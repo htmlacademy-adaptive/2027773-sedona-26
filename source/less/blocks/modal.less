@@ -1,5 +1,9 @@
 .modal {
   padding: 45px 42px 35px;
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    margin: auto;
+  }
 }
 
 .modal__title {
@@ -54,4 +58,10 @@
 .modal__button-container {
   padding: 20px;
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .modal--positive {
+    width: 640px;
+  }
 }
