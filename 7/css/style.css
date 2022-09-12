@@ -849,17 +849,6 @@
     width: 398px;
   }
 }
-.text-control--phone,
-.text-control--mail {
-  width: 190px;
-  margin-left: -16px;
-}
-@media (min-width: 1200px) {
-  .text-control--phone,
-  .text-control--mail {
-    width: 344px;
-  }
-}
 .reviews__contacts-phone,
 .reviews__email {
   display: flex;
@@ -901,9 +890,6 @@
   .reviews__input {
     margin-bottom: 48px;
   }
-}
-.text-control {
-  color: rgba(0, 0, 0, 0.3);
 }
 .reviews__list {
   font-family: "PT Sans";
@@ -1199,37 +1185,16 @@
     margin: 0;
   }
 }
-@media (min-width: 768px) {
-  .item-radio:not(:nth-child(2)) {
-    margin-left: 36px;
-  }
-  .item-radio:nth-child(2) {
-    margin-left: 10px;
-  }
-}
-@media (min-width: 1200px) {
-  .item-radio:not(:nth-child(2)) {
-    margin: 0;
-  }
-  .item-radio:nth-child(2) {
-    margin: 0;
-  }
-}
-@media (min-width: 768px) {
-  .modal {
-    width: 400px;
-    margin: auto;
-  }
-}
-@media (min-width: 768px) {
-  .modal--positive {
-    width: 640px;
-  }
-}
 @media (min-width: 1200px) {
   .reviews__list {
     display: flex;
     justify-content: space-evenly;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__user-message {
+    margin: auto;
+    width: 768px;
   }
 }
 .search__title {
@@ -1482,6 +1447,12 @@
 .modal {
   padding: 45px 42px 35px;
 }
+@media (min-width: 768px) {
+  .modal {
+    width: 400px;
+    margin: auto;
+  }
+}
 .modal__title {
   font-family: "PT Sans";
   font-size: 18px;
@@ -1539,6 +1510,11 @@
 .modal__button-container {
   padding: 20px;
   background-color: #f2f2f2;
+}
+@media (min-width: 768px) {
+  .modal--positive {
+    width: 640px;
+  }
 }
 .video-gallery__video-title {
   font-family: "PT Sans";
@@ -1679,6 +1655,36 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .item-radio:not(:nth-child(2)) {
+    margin-left: 36px;
+  }
+  .item-radio:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .item-radio:not(:nth-child(2)) {
+    margin: 0;
+  }
+  .item-radio:nth-child(2) {
+    margin: 0;
+  }
+}
+.text-control {
+  color: rgba(0, 0, 0, 0.3);
+}
+.text-control--phone,
+.text-control--mail {
+  width: 190px;
+  margin-left: -16px;
+}
+@media (min-width: 1200px) {
+  .text-control--phone,
+  .text-control--mail {
+    width: 344px;
+  }
 }
 .container {
   background-color: #ffffff;
