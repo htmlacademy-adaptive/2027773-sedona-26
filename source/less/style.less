@@ -17,11 +17,13 @@
 @import url(./blocks/nav.less);
 @import url(./blocks/modal.less);
 @import url(./blocks/video-gallery.less);
-@import url(./blocks/button-like.less);
+@import url(./blocks/like-container.less);
 @import url(./blocks/bottom-vector.less);
 @import url(global/global.less);
 @import url(global/viewports.less);
 @import url(./blocks/container.less);
+@import url(./global/title-psevdo.less);
+@import url(./blocks/copyright.less);
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -29,16 +31,21 @@ body {
   text-transform: uppercase;
   margin: auto;
   background-color: #F2F2F2;
-
 }
+
 @media (min-width: @tablet-width) {
   body {
     max-width: 768px;
   }
 }
+
 @media (min-width: @desktop-width) {
   body {
     max-width: 1280px;
     width: 1280px;
   }
+}
+
+img {
+  display: block;
 }

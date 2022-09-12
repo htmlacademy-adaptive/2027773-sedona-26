@@ -8,3 +8,34 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@media (min-width: @tablet-width) {
+  .item-radio:not(:nth-child(2)) {
+    margin-left: 36px;
+  }
+  .item-radio:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .item-radio:not(:nth-child(2)) {
+    margin: 0;
+  }
+  .item-radio:nth-child(2) {
+    margin: 0;
+  }
+}
+
+.text-control {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.text-control--phone,
+.text-control--mail {
+  width: 190px;
+  margin-left: -16px;
+  @media (min-width: @desktop-width) {
+    width: 344px;
+  }
+}

@@ -1,0 +1,22 @@
+.like-container__button-like{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.like-container__number-like{
+  .font-title();
+  text-align: start;
+}
+.like-container{
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  @media (min-width: @tablet-width){
+    align-items: center;
+    margin-right: 20px;
+  }
+  @media (min-width: @desktop-width){
+    margin-top: -62px;
+    color: #ffffff;
+  }
+}
