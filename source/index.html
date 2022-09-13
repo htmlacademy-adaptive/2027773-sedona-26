@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,7 +40,7 @@
     <main class="index-main">
       <section class="image-welcome image-welcome__bottom-vector">
         <h1 class="visually-hidden">Добро пожаловать в каньон Седона.</h1>
-        <img class="image-welcome__logo-main" src="img/text-index.svg" alt="Добро пожаловать в каньон Седона.">
+        <img class="image-welcome__logo-main" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в каньон Седона.">
       </section>
       <section class="advantages">
         <div class="advantages__header">
@@ -54,7 +57,11 @@
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
-            <img class="advantages__image" src="img/photo-city@1x1.png" alt="Городок Седона.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop1x.jpg 1x, img/photo-city-desktop2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+            <img class="advantages__image" src="img/photo-city@1x1.png" width="520" height="260" srcset="img/photo-city-mobil@2x.jpg 2x" alt="Городок Седона.">
+            </picture>
             <ul class="advantages-list__list">
               <li class="advantages-list__item advantages-list__item--house">
                 <h3 class="advantages-list__title">Жильё</h3>
@@ -83,7 +90,11 @@
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
-            <img class="advantages__image" src="img/photo-bridge@1x1.png" alt="Мост дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet2x.jpg 2x">
+            <img class="advantages__image" src="img/photo-bridge-mobil.jpg" width="520" height="260" srcset="img/photo-bridge-mobil@2x.jpg 2x" alt="Мост дьявола.">
+            </picture>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__subtitle">Небольшая площадь</h3>
@@ -117,7 +128,11 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Седона на карте.</h2>
-        <img class="map__image" src="img/map-mobile.png" alt="Седона на карте.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet-2x.jpg 2x">
+          <img class="map__image" src="img/map-mobile.jpg" width="320" height="350" srcset="img/map-mobile-2x.jpg 2x" alt="Седона на карте.">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">
