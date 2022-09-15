@@ -59,13 +59,13 @@
     width: 320px;
     background-color: #e5e5e5;
     content: "";
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       display: none;
     }
   }
 }
 
-.gallery__item:nth-child(1) .gallery__image:nth-child(3){
+.gallery__item:nth-child(1) .gallery__image:nth-child(3) {
   @media (min-width: @tablet-width) {
     min-width: 648px;
   }
@@ -76,7 +76,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .gallery__list{
+  .gallery__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 60px;
@@ -86,13 +86,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .gallery__item:nth-child(1){
+  .gallery__item:nth-child(1) {
     grid-column: 2 span;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .gallery__item:nth-child(3){
+  .gallery__item:nth-child(3) {
     background-color: #eaeaea;
   }
 }
