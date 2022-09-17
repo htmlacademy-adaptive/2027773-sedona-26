@@ -3,23 +3,30 @@
   display: flex;
   align-items: center;
   padding: 0;
-  justify-content: center;
+  flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
   &:hover,
   &:focus {
     color: #81B3D2;
   }
   &:active {
-    color:#B3B3B3;
+    color: #B3B3B3;
   }
   &:hover path,
   &:focus path {
     fill: #81B3D2;
   }
   &:active path {
-    fill:#B3B3B3;
+    fill: #B3B3B3;
   }
 }
 
 .copyright__text {
-  width: 121px;
+  width: 90px;
+}
+
+.copyright__logo-developer {
+  margin-left: 11px;
 }
