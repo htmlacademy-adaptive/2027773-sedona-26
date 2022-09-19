@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -31,6 +32,7 @@ csso()
 
 const html = () => {
 return gulp.src('source/*.html')
+.pipe(htmlmin({collapseWhitespace: true}))
 .pipe(gulp.dest('build'));
 }
 
@@ -38,6 +40,7 @@ return gulp.src('source/*.html')
 
 const scripts = () => {
 return gulp.src('source/script.js')
+.pipe(terser())
 .pipe(gulp.dest('build'))
 .pipe(browser.stream());
 }
@@ -68,7 +71,7 @@ webp: {}
 // SVG
 
 const svg = () => {
-return gulp.src('source/img/**/*.svg',)
+return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 }
@@ -80,7 +83,7 @@ return gulp.src('source/img/icons/*.svg')
 inlineSvg: true
 }))
 .pipe(rename('sprite.svg'))
-.pipe(gulp.dest(['source/img/icons','build/img/icons']));
+.pipe(gulp.dest('build/img'));
 }
 
 // Copy
