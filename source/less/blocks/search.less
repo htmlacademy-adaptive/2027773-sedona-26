@@ -3,6 +3,7 @@
   font-size: 21px;
   margin-top: 38px;
   margin-bottom: 20px;
+
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 26px;
@@ -17,18 +18,22 @@
   margin: 0 auto;
   margin-bottom: 32px;
   width: 265px;
+
   br {
     display: none;
   }
+
   @media (min-width: @tablet-width) {
     width: 435px;
+
     br {
       display: block;
     }
     margin-bottom: 43px;
   }
+
   @media (min-width: @desktop-width) {
-  margin-bottom: 47px;
+    margin-bottom: 47px;
   }
 }
 
@@ -45,22 +50,27 @@
   text-decoration-line: none;
   color: #ffffff;
   text-transform: uppercase;
+
   &:hover,
   &:focus {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
+
   &:active {
-    background-color:#5496BD;
+    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
   }
+
   &:disabled {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
+
   @media (min-width: @tablet-width) {
     width: 458px;
     margin-bottom: 58px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 66px;
-    }
+  }
 }

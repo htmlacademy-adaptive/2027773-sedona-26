@@ -1,0 +1,133 @@
+.advantages-list__list {
+  margin: 0;
+  list-style-type: none;
+  padding: 20px 18px 19px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.advantages-list__item {
+  list-style-type: none;
+  padding-top: 11px;
+
+  &--house {
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 47px;
+
+    @media (min-width: @tablet-width) {
+      background-position: center 61px;
+      background-size: 75px 72px;
+    }
+  }
+
+  &--burger {
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 52px;
+
+    @media (min-width: @tablet-width) {
+      background-position: center 64px;
+      background-size: 76px 68px;
+    }
+  }
+
+  &--gift {
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 44px;
+
+    @media (min-width: @tablet-width) {
+      background-position: center 59px;
+      background-size: 64px 75px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.advantages-list__title {
+  .font-title();
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 158px;
+    width: 185px;
+    margin-bottom: 25px;
+  }
+}
+
+.advantages-list__item--burger .advantages-list__description {
+  @media (min-width: @tablet-width) {
+    width: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
+  }
+}
+
+.advantages-list__description {
+  .font-text();
+
+  .advantages-list__transfer-text {
+    display: none;
+  }
+  text-align: left;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    br {
+      display: none;
+    }
+    text-align: center;
+    margin: 0 auto;
+    width: 192px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 261px;
+    margin-bottom: 80px;
+
+    .advantages-list__transfer-text {
+      display: block;
+    }
+  }
+}
+
+.advantages-list__item--gift .advantages-list__description {
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-list__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-list__item {
+    width: 400px;
+  }
+}

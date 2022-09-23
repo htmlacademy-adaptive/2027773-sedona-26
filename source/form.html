@@ -18,7 +18,7 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип Седоны.">
       </a>
-      <nav class="page-header__nav nav">
+      <nav class="page-header__nav nav nav--nojs">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Меню навигации.</span>
         </button>
@@ -71,13 +71,13 @@
               Контактный телефон*:
               <input class="reviews__text-control text-control text-control--phone" type="tel" value="Введите телефон"
                 name="telephone">
-              <img class="rewiews__image-phone" src="img/phone-icon.svg" alt="Телефонная трубка.">
+              <img class="reviews__image-phone" src="img/phone-icon.svg" alt="Телефонная трубка.">
             </label>
             <label class="reviews__email">
               Электронная почта*:
               <input class="reviews__text-control text-control text-control--mail" type="email" value="Введите e-mail"
                 name="email">
-              <img class="rewiews__image-email" src="img/email-icon.svg" alt="Конверт.">
+              <img class="reviews__image-email" src="img/email-icon.svg" alt="Конверт.">
             </label>
           </fieldset>
           <fieldset class="reviews__filter-radio">
@@ -184,17 +184,22 @@
         </svg>
       </a>
     </footer>
-    <div class="modal">
-      <h2 class="modal__title">Что-то пошло не так</h2>
-      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button modal__button--positive" type="button">Ок</button>
+    <div class="modal modal--close">
+      <div class="modal__container">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button modal__button--positive" type="button">Ок</button>
+      </div>
     </div>
-    <div class="modal modal--positive">
-      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.в ближайшее время мы
-        опубликуем его на сайте.</p>
-      <div class="modal__button-container">
-        <button class="modal__button" type="button">Закрыть окно</button>
+    <div class="modal modal--close ">
+      <div class="modal__container-positive">
+        <h2 class="modal__title-positive">Ваш отзыв отправлен!</h2>
+        <p class="modal__description-positive">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее
+          время мы
+          опубликуем его на сайте.</p>
+        <div class="modal__button-container">
+          <button class="modal__button-positive" type="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
   </div>
