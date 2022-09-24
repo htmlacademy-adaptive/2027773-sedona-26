@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 23px;
+
   &::before {
     content: "";
     width: 320px;
@@ -14,10 +15,12 @@
     bottom: 0;
     left: -20px;
     background-color: #e5e5e5;
+
     @media (min-width: @tablet-width) {
       display: none;
     }
   }
+
   @media (min-width: @tablet-width) {
     border: none;
   }
@@ -39,9 +42,11 @@
 
 .reviews {
   margin: auto 20px;
+
   @media (min-width: @tablet-width) {
     margin: auto 60px;
   }
+
   @media (min-width: @desktop-width) {
     margin: auto 120px;
   }
@@ -53,6 +58,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
   padding-top: 24px;
+
   @media (min-width: @tablet-width) {
     width: 308px;
     position: relative;
@@ -76,15 +82,10 @@
   text-align: start;
   color: #333333;
   margin-left: 16px;
+
   @media (min-width: @tablet-width) {
     text-align: start;
   }
-}
-
-.reviews__contacts-phone,
-.reviews__email {
-  .font-text();
-  color: #333333;
 }
 
 .reviews__text-control {
@@ -94,21 +95,26 @@
   background-color: #f2f2f2;
   width: 248px;
   padding: 16px;
+
   &:hover {
     background-color: #e5e5e5;
   }
+
   &:focus,
   &:active {
     background-color: #ffffff;
     outline: 4px solid #e5e5e5;
   }
+
   @media (min-width: @tablet-width) {
     margin-left: -16px;
   }
 }
+
 .reviews__label .reviews__text-control {
   margin-bottom: 16px;
   margin-left: -16px;
+
   @media (min-width: @desktop-width) {
     width: 398px;
   }
@@ -116,15 +122,19 @@
 
 .reviews__contacts-phone,
 .reviews__email {
+  .font-text();
+  color: #333333;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 16px;
   padding-left: 16px;
+
   @media (min-width: @tablet-width) {
     margin-left: 60px;
     padding: 0;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 92px;
   }
@@ -138,16 +148,20 @@
 .reviews__input {
   width: 100%;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin-bottom: 52px;
+  padding: 16px;
+
   &:hover {
     background-color: #e5e5e5;
   }
+
   &:focus,
   &:active {
     background-color: #ffffff;
     outline: 4px solid #e5e5e5;
   }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 55px;
   }
@@ -171,20 +185,25 @@
   border: none;
   color: #ffffff;
   text-transform: uppercase;
+
   &:hover,
   &:focus {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
+
   &:active {
-    background-color:#5496BD;
+    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
   }
+
   &:disabled {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
+
   @media (min-width: @tablet-width) {
     width: 324px;
   }
+
   @media (min-width: @desktop-width) {
     width: 384px;
   }
@@ -193,6 +212,7 @@
 .reviews__control {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .reviews__item {
@@ -205,20 +225,26 @@
   height: 46px;
   background: #f2f2f2;
   border-radius: 50%;
+
   &:hover,
   &:focus {
     background-color: #e5e5e5;
   }
+
   &:active {
     background-color: #d5d5d5;
   }
+}
+
+.reviews__radio[type="radio"]:focus-visible + .reviews__mark-radio {
+  outline: 2px solid #000000;
 }
 
 .reviews__mark-radio:active::before {
   opacity: 0.3;
 }
 
-.reviews__radio[type="radio"]:checked+.reviews__mark-radio::before {
+.reviews__radio[type="radio"]:checked + .reviews__mark-radio::before {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -234,10 +260,12 @@
   height: 46px;
   background: #f2f2f2;
   border-radius: 4px;
+
   &:hover,
   &:focus {
     background-color: #e5e5e5;
   }
+
   &:active {
     background-color: #d5d5d5;
   }
@@ -247,7 +275,11 @@
   opacity: 0.3;
 }
 
-.reviews__checkbox[type="checkbox"]:checked+.reviews__mark-checkbox::before {
+.reviews__checkbox[type="checkbox"]:focus-visible + .reviews__mark-checkbox {
+  outline: 2px solid #000000;
+}
+
+.reviews__checkbox[type="checkbox"]:checked + .reviews__mark-checkbox::before {
   position: absolute;
   top: 15px;
   left: 12px;
@@ -264,6 +296,7 @@
   display: block;
   color: rgba(51, 51, 51, 0.6);
   margin-left: auto;
+
   @media (min-width: @tablet-width) {
     font-size: 14px;
   }
@@ -271,7 +304,6 @@
 
 .reviews__input::placeholder {
   .font-title();
-  padding: 16px;
   text-align: start;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -288,13 +320,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
     &:nth-child(2)::before {
       position: absolute;
       bottom: 26px;
       left: 0;
       width: 1px;
       height: 338px;
-      background-color:  #dbdbdb;
+      background-color: #dbdbdb;
       content: "";
       display: block;
     }
@@ -317,13 +350,16 @@
   .reviews__filter-radio .reviews__title {
     &::after {
       .after-title();
+
       @media (min-width: @desktop-width) {
         width: 280px;
         right: 353px;
       }
     }
+
     &::before {
       .before-title();
+
       @media (min-width: @desktop-width) {
         width: 280px;
         right: -326px;
@@ -337,14 +373,17 @@
     &::after {
       .after-title();
       top: 51px;
+
       @media (min-width: @desktop-width) {
         width: 280px;
         right: 353px;
       }
     }
+
     &::before {
       .before-title();
       top: 51px;
+
       @media (min-width: @desktop-width) {
         width: 280px;
         right: -326px;
@@ -363,13 +402,16 @@
   .reviews__user-message .reviews__title {
     &::after {
       .after-title();
+
       @media (min-width: @desktop-width) {
         width: 280px;
         right: 353px;
       }
     }
+
     &::before {
       .before-title();
+
       @media (min-width: @desktop-width) {
         width: 280px;
         right: -326px;
@@ -384,12 +426,14 @@
   align-items: center;
   margin: 0 auto;
   margin-bottom: 28px;
+
   @media (min-width: @tablet-width) {
     max-width: 768px;
     grid-column: span 2;
     padding: 0;
     margin-bottom: 64px;
   }
+
   @media (min-width: @desktop-width) {
     width: 768px;
   }
@@ -432,6 +476,7 @@
   .reviews__item:not(:nth-child(even)) {
     margin-left: 84px;
   }
+
   .reviews__item:nth-child(even) {
     margin-left: 16px;
   }
@@ -441,6 +486,7 @@
   .reviews__item:not(:nth-child(even)) {
     margin: 0;
   }
+
   .reviews__item:nth-child(even) {
     margin: 0;
   }
@@ -449,6 +495,7 @@
 @media (min-width: @desktop-width) {
   .reviews__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
   }
 }
