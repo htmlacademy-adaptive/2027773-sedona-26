@@ -18,7 +18,7 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип Седоны.">
       </a>
-      <nav class="page-header__nav nav">
+      <nav class="page-header__nav nav nav--nojs">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Меню навигации.</span>
         </button>
@@ -52,19 +52,21 @@
         <h2 class="visually-hidden">Галерея.</h2>
         <ul class="gallery__list">
           <li class="gallery__item">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/relatives-desktop.webp 1x, img/relatives-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/relatives-tablet.webp 1x, img/relatives-tablet-2x.webp 2x">
-              <source type="image/webp" srcset="img/relatives-mobile.webp 1x, img/relatives-mobile-2x.webp 2x">
+            <a class="gallery__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/relatives-desktop.webp 1x, img/relatives-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/relatives-tablet.webp 1x, img/relatives-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/relatives-mobile.webp 1x, img/relatives-mobile-2x.webp 2x">
 
-              <source media="(min-width: 1200px)"
-                srcset="img/relatives-desktop.jpg 1x, img/relatives-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/relatives-tablet.jpg 1x, img/relatives-tablet-2x.jpg 2x">
-              <img class="gallery__image" src="img/relatives-mobile.jpg" width="280" height="280"
-                srcset="img/relatives-mobile-2x.jpg 2x" alt="Дорога на фоне заката.">
-            </picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/relatives-desktop.jpg 1x, img/relatives-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/relatives-tablet.jpg 1x, img/relatives-tablet-2x.jpg 2x">
+                <img class="gallery__image" src="img/relatives-mobile.jpg" width="280" height="280"
+                  srcset="img/relatives-mobile-2x.jpg 2x" alt="Дорога на фоне заката.">
+              </picture>
+            </a>
             <div class="gallery__user-like-container">
               <div class="gallery__user-container">
                 <p class="gallery__description">Неродные просторы</p>
@@ -81,21 +83,23 @@
             </div>
           </li>
           <li class="gallery__item">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/local-vegetation-desktop.webp 1x, img/local-vegetation-desktop-2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/local-vegetation-tablet.webp 1x, img/local-vegetation-tablet-2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/local-vegetation-mobile.webp 1x, img/local-vegetation-mobile-2x.webp 2x">
+            <a class="gallery__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/local-vegetation-desktop.webp 1x, img/local-vegetation-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/local-vegetation-tablet.webp 1x, img/local-vegetation-tablet-2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/local-vegetation-mobile.webp 1x, img/local-vegetation-mobile-2x.webp 2x">
 
-              <source media="(min-width: 1200px)"
-                srcset="img/local-vegetation-desktop.jpg 1x, img/local-vegetation-desktop-2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/local-vegetation-tablet.jpg 1x, img/local-vegetation-tablet-2x.jpg 2x">
-              <img class="gallery__image" src="img/local-vegetation-mobile.jpg" width="280" height="280"
-                srcset="img/local-vegetation-mobile-2x.jpg 2x" alt="Цветущий кактус.">
-            </picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/local-vegetation-desktop.jpg 1x, img/local-vegetation-desktop-2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/local-vegetation-tablet.jpg 1x, img/local-vegetation-tablet-2x.jpg 2x">
+                <img class="gallery__image" src="img/local-vegetation-mobile.jpg" width="280" height="280"
+                  srcset="img/local-vegetation-mobile-2x.jpg 2x" alt="Цветущий кактус.">
+              </picture>
+            </a>
             <div class="gallery__user-like-container">
               <div class="gallery__user-container">
                 <p class="gallery__description">Местная растительность</p>
@@ -112,20 +116,21 @@
             </div>
           </li>
           <li class="gallery__item">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/nord-road-desktop.webp 1x, img/nord-road-desktop-2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/nord-road-tablet.webp 1x, img/nord-road-tablet-2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/nord-road-mobile.webp 1x, img/nord-road-mobile-2x.webp 2x">
+            <a class="gallery__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/nord-road-desktop.webp 1x, img/nord-road-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/nord-road-tablet.webp 1x, img/nord-road-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/nord-road-mobile.webp 1x, img/nord-road-mobile-2x.webp 2x">
 
-              <source media="(min-width: 1200px)"
-                srcset="img/nord-road-desktop.jpg 1x, img/nord-road-desktop-2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/nord-road-tablet.jpg 1x, img/nord-road-tablet-2x.jpg 2x">
-              <img class="gallery__image" src="img/nord-road-mobile.jpg" width="280" height="280"
-                srcset="img/nord-road-mobile-2x.jpg 2x" alt="Серпантин.">
-            </picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/nord-road-desktop.jpg 1x, img/nord-road-desktop-2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/nord-road-tablet.jpg 1x, img/nord-road-tablet-2x.jpg 2x">
+                <img class="gallery__image" src="img/nord-road-mobile.jpg" width="280" height="280"
+                  srcset="img/nord-road-mobile-2x.jpg 2x" alt="Серпантин.">
+              </picture>
+            </a>
             <div class="gallery__user-like-container">
               <div class="gallery__user-container">
                 <p class="gallery__description">Дорога на север</p>
@@ -142,21 +147,22 @@
             </div>
           </li>
           <li class="gallery__item">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/bridge-gallery-desktop.webp 1x, img/bridge-gallery-desktop-2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/bridge-gallery-tablet.webp 1x, img/bridge-gallery-tablet-2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/bridge-gallery.webp 1x, img/bridge-gallery-2x.webp 2x">
+            <a class="gallery__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/bridge-gallery-desktop.webp 1x, img/bridge-gallery-desktop-2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/bridge-gallery-tablet.webp 1x, img/bridge-gallery-tablet-2x.webp 2x">
+                <source type="image/webp" srcset="img/bridge-gallery.webp 1x, img/bridge-gallery-2x.webp 2x">
 
-              <source media="(min-width: 1200px)"
-                srcset="img/bridge-gallery-desktop.jpg 1x, img/bridge-gallery-desktop-2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/bridge-gallery-tablet.jpg 1x, img/bridge-gallery-tablet-2x.jpg 2x">
-              <img class="gallery__image" src="img/bridge-gallery.jpg" width="280" height="280"
-                srcset="img/bridge-gallery-2x.jpg 2x" alt="Отвесная скала.">
-            </picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/bridge-gallery-desktop.jpg 1x, img/bridge-gallery-desktop-2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/bridge-gallery-tablet.jpg 1x, img/bridge-gallery-tablet-2x.jpg 2x">
+                <img class="gallery__image" src="img/bridge-gallery.jpg" width="280" height="280"
+                  srcset="img/bridge-gallery-2x.jpg 2x" alt="Отвесная скала.">
+              </picture>
+            </a>
             <div class="gallery__user-like-container">
               <div class="gallery__user-container">
                 <p class="gallery__description">Мост дьявола</p>
