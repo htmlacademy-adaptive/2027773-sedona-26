@@ -12,17 +12,18 @@
 
 .nav__list {
   position: absolute;
-  top: -102px;
+  top: 0;
   width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
+  z-index: 2;
 }
 
 .nav--close .nav__toggle {
   position: absolute;
   right: 20px;
-  top: -83px;
+  top: 17px;
   width: 22px;
   height: 22px;
   border: none;
@@ -43,7 +44,7 @@
 .nav .nav__toggle {
   position: absolute;
   right: 20px;
-  top: -79px;
+  top: 17px;
   background: url("../img/icon-menu.svg");
   width: 22px;
   height: 22px;
@@ -66,11 +67,31 @@
 
 .nav--close .nav__list {
   position: absolute;
-  top: -102px;
+  top: 0;
   width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 768px;
+    height: 56px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 1200px;
+    height: 56px;
+    align-items: center;
+  }
 }
 
 .nav--nojs .nav__toggle {
@@ -79,6 +100,8 @@
 
 .nav--nojs .nav__list {
   display: block;
+  position: initial;
+  margin-top: 40px;
 }
 
 .nav__item:last-child::before {
@@ -127,6 +150,7 @@
 
 @media (min-width: @tablet-width) {
   .nav .nav__list {
+    position: absolute;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -146,6 +170,7 @@
 
 @media (min-width: @tablet-width) {
   .nav__link {
+    display: inline;
     background-color: transparent;
     box-shadow: none;
     color: #000000;

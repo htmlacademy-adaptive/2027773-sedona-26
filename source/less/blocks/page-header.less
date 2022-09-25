@@ -1,16 +1,21 @@
 .page-header {
-  height: 56px;
+  min-height: 56px;
   background-color: #ffffff;
+  position: relative;
 
   .page-header__logo-image {
     position: relative;
     z-index: 1;
-    display: block;
     margin: auto;
   }
 }
 
 .page-header__nav {
-  position: relative;
   z-index: 1;
+  margin-top: -40px;
+}
+
+.page-header__logo {
+  display: block;
+  margin-bottom: -40px;
 }
